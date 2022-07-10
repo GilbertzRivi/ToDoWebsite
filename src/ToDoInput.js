@@ -24,10 +24,10 @@ export default function ToDoInput({todoelements, setTodoelements}) {
   }
 
   return (
-    <div>
-        <input type='text' ref={todoNameRef}></input>
-        <button type='button' onClick={AddTodo}>Add element</button>
-        <button type='button' onClick={DeleteTodos}>Clear done todos</button>
+    <div id='Input'>
+        <input class='Input' placeholder='Your todo' type='text' ref={todoNameRef}></input>
+        <button class='Button' type='button' onClick={AddTodo}>Add element</button>
+        <button class='Button' type='button' onClick={DeleteTodos}>Clear done todos</button>
     </div>
   )
 }

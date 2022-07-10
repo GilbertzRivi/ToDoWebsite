@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+html{
+    height: 100%;
+}
+
+:root{
+    --bg: #34495e;
+    --buttons: #f39c12;
+    --elements: #e74c3c;
+    --font: #fff;
+    --font-size: 24px;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--font);
+    height: 100%;
+    margin: 0px;
+    font-size: var(--font-size);
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Button{
+    color: var(--font);
+    background-color: var(--buttons);
+    border: none;
+    min-height: var(--font-size);
+    border-radius: 5px;
+    margin: 5px;
+    font-size: var(--font-size);
+    padding: calc(var(--font-size) / 4);
+}
+
+.Input{
+    color: var(--font);
+    background-color: var(--buttons);
+    border: none;
+    min-height: var(--font-size);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: var(--font-size);
+    padding: calc(var(--font-size) / 4);
+}
+
+.ToDoElement{
+    color: var(--font);
+    background-color: var(--elements);
+    border-radius: 5px;
+    min-height: 25px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--font-size) * 20);
+    padding: calc(var(--font-size) / 4);
+}
+
+#Summary{
+    color: var(--font);
+    background-color: var(--buttons);
+    margin: 5px;
+    min-height: var(--font-size);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: calc(var(--font-size) / 4);
+}
+
+#Summary p{
+    margin: 0px;
+}
+
+.Checkbox{
+    width: calc(var(--font-size)*0.7);
+    height: calc(var(--font-size)*0.7);
+}

@@ -10,9 +10,9 @@ export default function ToDoElement({element, elements, setTodoelements}) {
   }
 
   return (
-    <div>
+    <div class='ToDoElement' onClick={CompleteChange}>
         <label>
-            <input type='checkbox' checked={element.complete} onClick={CompleteChange}/>
+            <input class='Checkbox' type='checkbox' checked={element.complete} onClick={CompleteChange}/>
             {element.name}
         </label>
     </div>
